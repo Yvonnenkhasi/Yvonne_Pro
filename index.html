@@ -42,16 +42,13 @@
   }
   
 .hero img {
-  max-width: 400px;  /* Keeps the image within bounds */
-  width: 100%;       /* Makes sure it adjusts based on the container */
-  height: auto;      /* Keeps the aspect ratio intact */
-  border-radius: 70px;  /* Rounding the image */
-  display: block;
-  transform: translateX(-35px); /* Moves image to the left, you can adjust this */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Optional shadow for more contrast */
-}
-
-    
+  width: 300px;  /* Size of the image */
+  height: 300px;  /* Making it a square */
+  border-radius: 50%;  /* Make it circular */
+  object-fit: cover;  /* Ensures the image fills the circle without distorting */
+  margin-left: -35px; /* Move it a little to the left, similar to the first image */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add some shadow for depth */
+}    
     .hero .text {
       max-width: 600px;
     }
