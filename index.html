@@ -33,14 +33,20 @@
     }
 
     /* Hero Section */
-    .hero {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 50px 20px;
-      background-color: #;
-    }
-
+     .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the image and text */
+    padding: 50px 20px;
+    background-color: #131E28;
+  }
+  
+  .hero img {
+    max-width: 400px;
+    border-radius: 70px;
+    display: block;
+    transform: translateX(-35px); /* Move image 35px to the left */
+  }
     .hero .text {
       max-width: 600px;
     }
@@ -76,14 +82,7 @@
     .hero .button:hover {
       background-color: #45a049;
     }
-
-    .hero img {
-    max-width: 400px;
-    border-radius: 10px;
-    display: block;
-    transform: translateX(-35px); /* Shifts the image to the left */
-   }
-
+    
     .image-container {
       display: flex;
       justify-content: center;
