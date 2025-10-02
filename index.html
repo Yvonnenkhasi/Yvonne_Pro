@@ -41,12 +41,16 @@
     background-color: #131E28;
   }
   
- .hero img {
-      max-width: 400px;
-      border-radius: 70px; /* Rounding the image */
-      display: block;
-      transform: translateX(-35px); /* Move image to the left */
-    }
+.hero img {
+  max-width: 400px;  /* Keeps the image within bounds */
+  width: 100%;       /* Makes sure it adjusts based on the container */
+  height: auto;      /* Keeps the aspect ratio intact */
+  border-radius: 70px;  /* Rounding the image */
+  display: block;
+  transform: translateX(-35px); /* Moves image to the left, you can adjust this */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Optional shadow for more contrast */
+}
+
     
     .hero .text {
       max-width: 600px;
